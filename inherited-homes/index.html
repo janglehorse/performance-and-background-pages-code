@@ -74,8 +74,34 @@
       </div>
     </div>
 
-    <section class="grid">
+<!-- Compact Stats (no animation) -->
+<section class="stats option-c" style="display:flex;flex-wrap:wrap;gap:10px;margin:20px 0">
+  <style>
+    .stats.option-c .chip {
+      display:flex;align-items:center;gap:10px;
+      padding:10px 12px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:999px;
+      background:rgba(255,255,255,.03)/*  */
+    }
+    .stats.option-c .chip .dot {
+      width:8px;height:8px;border-radius:50%;
+      background:#7dd3fc;
+      box-shadow:0 0 0 4px rgba(125,211,252,.18)
+    }
+    .stats.option-c .chip b {font-size:14px}
+    .stats.option-c .chip span {font-size:12px;color:var(--muted)}
+  </style>
 
+  <div class="chip"><div class="dot"></div><b>40%</b><span>over-ask rate</span></div>
+  <div class="chip"><div class="dot"></div><b>18%</b><span>avg net over cash offer</span></div>
+  <div class="chip"><div class="dot"></div><b>7</b><span>avg days on market</span></div>
+  <div class="chip"><div class="dot"></div><b>92%</b><span>predicted price accuracy</span></div>
+  <div class="chip"><div class="dot"></div><b>11</b><span>total inherited/probate transactions</span></div>
+  <div class="chip"><div class="dot"></div><b>54%</b><span>direct assist with property prep</span></div>
+</section>
+<!-- Property Cards -->
+    <section class="grid">
       <!-- SEPT 2025 -->
       <article class="card">
         <span class="badge coming">Coming Soon</span>
